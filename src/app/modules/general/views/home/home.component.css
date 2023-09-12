@@ -1,0 +1,41 @@
+.header{
+  width: 100%;
+  height: 62px;
+  background-color: #FCDDEC;
+  position: relative;
+}
+
+.search-bar{
+  width: 288px;
+  height: 35px;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  right: 29px;
+  top: 14px;
+}
+
+.search-bar i{
+  font-size: 25px;
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  color: #DFDFDF;
+}
+
+.search-bar input{
+  width: 85%;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  background-color: transparent;
+  border: 0;
+}
+
+.search-bar input:active{
+  border: 0;
+}
+
+.search-bar input::placeholder{
+  color: #DFDFDF;
+}
