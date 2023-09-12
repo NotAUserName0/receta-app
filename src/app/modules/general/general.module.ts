@@ -5,6 +5,7 @@ import { HomeComponent } from './views/home/home.component';
 import { InsertComponent } from './views/insert/insert.component';
 import { CardComponent } from './components/card/card.component';
 import {AppModule} from "../../app.module";
+import {IonicModule} from "@ionic/angular";
 
 
 
@@ -14,9 +15,10 @@ import {AppModule} from "../../app.module";
     InsertComponent,
     CardComponent
   ],
-  imports: [
-    CommonModule,
-    GeneralRoutingModule,
-  ]
+    imports: [
+        CommonModule,
+        GeneralRoutingModule,
+        IonicModule,
+    ]
 })
 export class GeneralModule { }
