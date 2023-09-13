@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
-  items=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+  items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+  buttons = ["Mexicana", "Inglesa", "Picante", "Australiana", "Americana", "Espanola"]
+  recetas = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 }
