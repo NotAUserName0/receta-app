@@ -115,13 +115,14 @@ ion-segment {
   width: 100%;
   flex: 1;
   padding: 0px 10px 0px 10px;
-  margin-top: 10px;
+  margin: 10px auto 0px auto;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   animation: slideFadeIn 0.5s ease-in-out forwards;
   opacity: 0;
   transform: translateY(100%);
+  position: relative;
 }
 
 .main-list {
@@ -135,6 +136,8 @@ ion-segment {
   height: 120px;
   border-radius: 10px;
   background: #FFDEFA;
+  display: flex;
+  flex-direction: row;
 }
 
 .img {
@@ -142,6 +145,65 @@ ion-segment {
   height: 120px;
   background-color: #333333;
   border-radius: 10px 0px 0px 10px;
+}
+
+.receta-preview {
+  height: 100%;
+  flex: 1;
+}
+
+.receta-title {
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.receta-description {
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.receta-tags {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 230px;
+  display: flex;
+}
+
+.receta-tag-list {
+}
+
+.receta-tag-item {
+  width: 89px;
+  height: 23px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #6B0A1D;
+  color: white;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6px;
+}
+
+.receta-icon {
+  font-size: 25px;
+  position: absolute;
+  margin: 6px;
+  color: white;
 }
 
 @keyframes slideFadeIn {
@@ -156,11 +218,11 @@ ion-segment {
 }
 
 @keyframes slideFadeInVertical {
-  0%{
+  0% {
     opacity: 0;
     transform: translateX(100%);
   }
-  100%{
+  100% {
     opacity: 1;
     transform: translateX(0%);
   }

@@ -26,9 +26,22 @@
   <ion-segment class="recetas" scrollable="">
     <div class="main-list" *ngFor="let receta of recetas">
       <div class="receta">
+        <i class="fa-regular fa-heart receta-icon"></i>
         <!--<img src="" alt="">-->
         <div class="img"></div>
-        <div class="receta-preview"></div>
+        <div class="receta-preview">
+          <div class="receta-title">Nombre</div>
+          <div class="receta-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus mauris
+            ut sagittis lobortis. Proin iaculis sollicitudin mauris eu imperdiet.
+          </div>
+          <ion-segment class="receta-tags" scrollable="">
+            <div class="receta-tag-list" *ngFor="let tag of tags">
+              <div class="receta-tag-item">
+                {{tag}}
+              </div>
+            </div>
+          </ion-segment>
+        </div>
       </div>
     </div>
   </ion-segment>

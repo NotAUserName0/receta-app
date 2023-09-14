@@ -6,6 +6,7 @@ import { InsertComponent } from './views/insert/insert.component';
 import { CardComponent } from './components/card/card.component';
 import {AppModule} from "../../app.module";
 import {IonicModule} from "@ionic/angular";
+import { SearchComponent } from './views/search/search.component';
 
 
 
@@ -13,7 +14,8 @@ import {IonicModule} from "@ionic/angular";
   declarations: [
     HomeComponent,
     InsertComponent,
-    CardComponent
+    CardComponent,
+    SearchComponent
   ],
     imports: [
         CommonModule,
