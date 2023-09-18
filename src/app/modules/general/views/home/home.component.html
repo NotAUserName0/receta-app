@@ -26,7 +26,8 @@
   <ion-segment class="recetas" scrollable="">
     <div class="main-list" *ngFor="let receta of recetas">
       <div class="receta">
-        <i class="fa-regular fa-heart receta-icon"></i>
+        <i class="fa-regular fa-heart receta-icon" (click)="abooutToLike(receta)"></i>
+        <i class="fa-solid fa-heart receta-icon like-icon" (click)="abooutToLike(receta)" [class.liked]="receta.liked"></i>
         <!--<img src="" alt="">-->
         <div class="img"></div>
         <div class="receta-preview">
