@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { IonicModule } from '@ionic/angular';
 import { NavbarComponent } from './extras/navbar/navbar.component';
 import { IndexComponent } from './extras/index/index.component';
+import { InitialComponent } from './extras/initial/initial.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     IndexComponent,
+    InitialComponent,
   ],
   imports: [
     BrowserModule,

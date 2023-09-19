@@ -27,7 +27,8 @@
     <div class="main-list" *ngFor="let receta of recetas">
       <div class="receta">
         <i class="fa-regular fa-heart receta-icon" (click)="abooutToLike(receta)"></i>
-        <i class="fa-solid fa-heart receta-icon like-icon" (click)="abooutToLike(receta)" [class.liked]="receta.liked"></i>
+        <i class="fa-solid fa-heart receta-icon like-icon" (click)="abooutToLike(receta)"
+           [class.liked]="receta.liked"></i>
         <!--<img src="" alt="">-->
         <div class="img"></div>
         <div class="receta-preview">
@@ -46,6 +47,11 @@
       </div>
     </div>
   </ion-segment>
+
+  <div class="notSigned">
+    <div class="demo">¿Todavia no tienes cuenta? Unete!</div>
+    <button class="demo-btn" type="button">Iniciar Sesion</button>
+  </div>
 
 </div>
 

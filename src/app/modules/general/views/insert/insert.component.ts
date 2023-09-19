@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { NavController } from '@ionic/angular';
+import {Component} from '@angular/core';
+import {NavController} from '@ionic/angular';
 
 @Component({
   selector: 'app-insert',
@@ -8,9 +8,10 @@ import { NavController } from '@ionic/angular';
 })
 export class InsertComponent {
 
-  constructor(private navCtrl: NavController) {}
+  constructor(private navCtrl: NavController) {
+  }
 
   irAtras() {
-    this.navCtrl.navigateBack('/'); // Navega hacia la vista anterior o a una ruta específica
+    this.navCtrl.back(); // Navega hacia la vista anterior o a una ruta específica
   }
 }
