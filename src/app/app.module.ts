@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { NavbarComponent } from './extras/navbar/navbar.component';
 import { IndexComponent } from './extras/index/index.component';
 import { InitialComponent } from './extras/initial/initial.component';
+import { CensoredComponent } from './modules/censored/censored.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { InitialComponent } from './extras/initial/initial.component';
     NavbarComponent,
     IndexComponent,
     InitialComponent,
+    CensoredComponent,
   ],
   imports: [
     BrowserModule,

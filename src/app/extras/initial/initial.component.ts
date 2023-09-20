@@ -13,10 +13,10 @@ export class InitialComponent implements OnInit {
   constructor(private router: Router) {
   }
 
-  ngOnInit(): void {
+  ngOnInit(): void { //En este componente se verifica y si no pasa manda toast
     setTimeout(() => {
       sessionStorage.setItem('init', String(true))
       this.router.navigate(['/app']);
-    }, 3000);
+    }, 5000);
   }//crear variable temporal para decile al app que siempre rediriga a app y no se use este menu
 }
