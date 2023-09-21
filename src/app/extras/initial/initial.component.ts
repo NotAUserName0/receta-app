@@ -16,6 +16,7 @@ export class InitialComponent implements OnInit {
   ngOnInit(): void { //En este componente se verifica y si no pasa manda toast
     setTimeout(() => {
       sessionStorage.setItem('init', String(true))
+      //localStorage.setItem("init","yes")
       this.router.navigate(['/app']);
     }, 5000);
   }//crear variable temporal para decile al app que siempre rediriga a app y no se use este menu

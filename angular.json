@@ -36,6 +36,8 @@
             ],
             "styles": [
               "src/styles.css",
+              "node_modules/animate.css/animate.min.css"
+              ,
               {
                 "input": "node_modules/@ionic/angular/css/core.css"
               },
@@ -173,7 +175,8 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/animate.css/animate.min.css"
             ],
             "scripts": []
           }

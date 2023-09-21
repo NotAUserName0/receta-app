@@ -7,6 +7,9 @@ import { CardComponent } from './components/card/card.component';
 import {AppModule} from "../../app.module";
 import {IonicModule} from "@ionic/angular";
 import { SearchComponent } from './views/search/search.component';
+import { NotificationsComponent } from './views/notifications/notifications.component';
+import { FavoritesComponent } from './views/favorites/favorites.component';
+import { ProfileComponent } from './views/profile/profile.component';
 
 
 
@@ -15,7 +18,10 @@ import { SearchComponent } from './views/search/search.component';
     HomeComponent,
     InsertComponent,
     CardComponent,
-    SearchComponent
+    SearchComponent,
+    NotificationsComponent,
+    FavoritesComponent,
+    ProfileComponent
   ],
     imports: [
         CommonModule,
